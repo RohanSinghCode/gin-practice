@@ -8,5 +8,8 @@ import (
 func main() {
 	r := gin.Default()
 	r.GET("/ping", controllers.StatusRouter)
+
+	// Users endpoint
+	r.POST("/users", controllers.PostUser)
 	r.Run()
 }
