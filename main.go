@@ -11,5 +11,6 @@ func main() {
 
 	// Users endpoint
 	r.POST("/users", controllers.PostUser)
+	r.GET("/users/:userId", controllers.GetUser)
 	r.Run()
 }
